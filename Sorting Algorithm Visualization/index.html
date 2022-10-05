@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>All Sorts</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.min.js"></script>
+    
+    <script src="Bubble Sort - Fast/sketch.js"></script>
+    <script src="Bubble Sort - Flag/sketch.js"></script>
+    <script src="Bubble Sort - Slow/sketch.js"></script>
+    <script src="Cocktail Shaker Sort/sketch.js"></script>
+    <script src="Insertion Sort/sketch.js"></script>
+    <script src="Quick Sort/sketch.js"></script>
+    <script src="Radix Sort - Direct/sketch.js"></script>
+    <script src="Radix Sort - Exchange/sketch.js"></script>
+    <script src="Selection Sort/sketch.js"></script>
+    <script src="Shell Sort/sketch.js"></script>
+
+    <script src="sortnode.js"></script>
+    <script src="sorting.js"></script>
+    <script src="sketch.js"></script>
+  </head>
+  <body>
+    <button onclick="sort_start('Bubble Sort 1')">Bubble Sort</button>
+    <button onclick="sort_start('Bubble Sort 2')">Bubble Sort (Flag)</button>
+    <button onclick="sort_start('Bubble Sort 3')">Bubble Sort (Slow)</button>
+    <button onclick="sort_start('Cocktail Shaker Sort')">Cocktail Shaker Sort</button>
+    <button onclick="sort_start('Insertion Sort')">Insertion Sort</button>
+    <button onclick="sort_start('Quick Sort')">Quick Sort</button>
+    <button onclick="sort_start('Radix Sort 1')">Radix Sort (Direct)</button>
+    <button onclick="sort_start('Radix Sort 2')">Radix Sort (Exchange)</button>
+    <button onclick="sort_start('Selection Sort')">Selection Sort</button>
+    <button onclick="sort_start('Shell Sort')">Shell Sort</button>
+    <br>
+    <button onclick="reset()">Reset</button>
+    <input type="radio" id="reset1" name="reset" onclick="resetSet('Random')" checked>
+    <label for="reset1">Random</label>
+    <input type="radio" id="reset2" name="reset" onclick="resetSet('Sorted')">
+    <label for="reset2">Sorted</label>
+  </body>
+</html>

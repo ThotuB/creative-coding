@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>L-System</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script src="sketch.js"></script>
+    <script src="drawstyle.js"></script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+          <label for="ruleA">A=</label>
+          <input id="ruleA" onClick="this.select();" type="text" value="AA+[+A++A-A]-[-A-[+A+A]-[-A]-A]">
+        </td> 
+        <td>
+          <button onclick="SetRule('A')">SET RULE</button>
+        </td>
+        <td>
+          <label for="ruleCurrentA">A=</label>
+          <span id="ruleTextA" role="textbox">AAA</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="ruleB">B=</label>
+          <input id="ruleB" onClick="this.select();" type="text" value="">
+        </td>
+        <td>
+          <button onclick="SetRule('B')">SET RULE</button>
+        </td> 
+        <td>
+          <label for="ruleCurrentB">B=</label>
+          <span id="ruleTextB" role="textbox"></span>
+        </td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td>
+          <button onclick="ChoseStyle(0)">STYLE I</button>
+        </td>
+        <td>
+          <button onclick="ChoseStyle(1)">STYLE II</button>
+        </td>
+        <td>
+          <button onclick="ChoseStyle(2)">STYLE III</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="Iterate()" >GO</button>
+        </td>
+        <td>
+          <button onclick="Reset()">RESET</button>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

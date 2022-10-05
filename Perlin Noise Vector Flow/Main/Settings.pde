@@ -1,0 +1,9 @@
+int SCALE = 10;
+
+float DELTA_OFF = 0.05;
+float DELTA_TIME = 0.01;
+
+int PARTICLE_COUNT = 10000;
+int PARTICLE_SPEED_MIN = 2;
+int PARTICLE_SPEED_MAX = 8;
+int ALPHA = 5;
